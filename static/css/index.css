@@ -3,7 +3,8 @@ body{
 }
 #form{
     margin: 150px auto;
-    width: inherit;
+    max-width: 800px;
+    min-width: 500px;
     display: flex;
     justify-content: center;
     border: 3px dashed red;
