@@ -1,0 +1,14 @@
+body{
+    background-image: url("/static/img/img1.jpg");
+}
+#form{
+    margin: 100px auto;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    border: 2px dashed lawngreen;
+}
+#res {
+    text-align: center;
+    color: gold;
+}

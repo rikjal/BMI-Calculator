@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block title %} Index {% endblock %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}"/>{% endblock %}
+{% block body %}
+    <div id="form">
+        <style scoped="">
+            .button-success,
+            .button-error,
+            .button-warning,
+            .button-secondary {
+                color: white;
+                border-radius: 4px;
+                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+            }
+
+            .button-success {
+                background: rgb(28, 184, 65);
+                /* this is a green */
+            }
+
+            .button-error {
+                background: rgb(202, 60, 60);
+                /* this is a maroon */
+            }
+
+            .button-warning {
+                background: rgb(223, 117, 20);
+                /* this is an orange */
+            }
+
+            .button-secondary {
+                background: rgb(66, 184, 221);
+                /* this is a light blue */
+            }
+        </style>
+        <form class="pure-form pure-form-stacked" method="post" action="/">
+            <fieldset>
+                <label for="stacked-email">Height</label>
+                <input type="text" id="stacked-email" placeholder="Height in Meters" name="height"/>
+                <label for="stacked-password">Weight</label>
+                <input type="text" id="stacked-password" placeholder="Weight in KGs" name="weight"/>
+                <br>
+                <button type="submit" class="button-success pure-button" value="calculate">Calculate</button>
+            </fieldset>
+            <hr>
+            <div id="res">
+                <p>Calculated BMI:
+                    {% if bmi %}
+                        {{ bmi }}
+                    {% endif %}
+                </p>
+            </div>
+        </form>
+    </div>
+{% endblock %}
