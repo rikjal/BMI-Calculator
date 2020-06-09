@@ -6,7 +6,7 @@ body{
     width: auto;
     display: flex;
     justify-content: center;
-    border: 3px dashed green;
+    border: 3px dashed red;
 }
 #res {
     text-align: center;
