@@ -3,7 +3,7 @@ body{
 }
 #form{
     margin: 150px auto;
-    width: auto;
+    width: inherit;
     display: flex;
     justify-content: center;
     border: 3px dashed red;
