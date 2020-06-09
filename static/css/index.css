@@ -2,7 +2,7 @@ body{
     background-image: url("/static/img/img1.jpg");
 }
 #form{
-    margin: 0 auto;
+    margin: 150px auto;
     width: auto;
     display: flex;
     justify-content: center;
